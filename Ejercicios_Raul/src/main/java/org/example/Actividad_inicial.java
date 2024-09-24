@@ -15,12 +15,27 @@ public class Actividad_inicial {
         String curso = entrada.nextLine();
 
         System.out.println("Hola " + nombre + ", bienvenido a  " + curso + ".");
-        System.out.println("Introduce un numero");
-        int numero = entrada.nextInt();
-        System.out.println("Introduce otro numero");
-        int numero2 = entrada.nextInt();
-        int resultado = numero + numero2;
-        System.out.println("El resultado es: " + resultado);
+        int numero = 0;
+        int numero2 = 0;
+        while(numero == 0 || numero2 == 0)
+        {
+            System.out.println("Introduce un numero");
+            numero = entrada.nextInt();
+            System.out.println("Introduce otro numero");
+            numero2 = entrada.nextInt();
+
+            if (numero == 0 || numero2 == 0)
+            {
+                System.out.println("No sumes con 0");
+            }else{
+                int resultado = numero + numero2;
+                System.out.println("El resultado es: " + resultado);
+            }
+        }
+
+
+
+
 
 
 
