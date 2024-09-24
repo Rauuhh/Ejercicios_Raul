@@ -9,10 +9,12 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
-/*Actividad_inicial actividad_inicial = new Actividad_inicial();
-actividad_inicial.ejecutar();*/
-       Ejercicio1 ejercicio1 = new Ejercicio1();
-       ejercicio1.ejercicio1();
+    /*Actividad_inicial actividad_inicial = new Actividad_inicial();
+    actividad_inicial.ejecutar();*/
+       /*Ejercicio1 ejercicio1 = new Ejercicio1();
+       ejercicio1.ejercicio1();*/
+            Ejercicio2 ejercicio2 = new Ejercicio2();
+            ejercicio2.ejercicio2();
 
     }
 }

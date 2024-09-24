@@ -10,7 +10,7 @@ public class Ejercicio1 {
         if (numero > 0)
             System.out.println("El numero mayor que 0");
         if (numero < 0)
-            System.out.println("El numero mayor que 1");
+            System.out.println("El numero menor que 0");
         if (numero == 0)
             System.out.println("El numero es 0");
 
