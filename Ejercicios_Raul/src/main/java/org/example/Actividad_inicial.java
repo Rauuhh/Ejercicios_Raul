@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Actividad_inicial {
@@ -19,29 +20,25 @@ public class Actividad_inicial {
         int numero2 = 0;
         while(numero == 0 || numero2 == 0)
         {
-            System.out.println("Introduce un numero");
-            numero = entrada.nextInt();
-            System.out.println("Introduce otro numero");
-            numero2 = entrada.nextInt();
-
+            try {
+                System.out.println("Introduce un numero");
+                numero = entrada.nextInt();
+                System.out.println("Introduce otro numero");
+                numero2 = entrada.nextInt();
+            }catch (NumberFormatException | InputMismatchException e) {
+                System.out.println("Introduce un numero valido");
+                entrada.nextLine();
+            }
             if (numero == 0 || numero2 == 0)
             {
                 System.out.println("No sumes con 0");
+                numero = 0;
+                numero2 = 0;
             }else{
                 int resultado = numero + numero2;
                 System.out.println("El resultado es: " + resultado);
             }
         }
-
-
-
-
-
-
-
-
         // System.in.read();
-
-
     }
 }
