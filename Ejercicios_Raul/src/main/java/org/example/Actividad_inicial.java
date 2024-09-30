@@ -26,6 +26,7 @@ public class Actividad_inicial {
                 System.out.println("Introduce otro numero");
                 numero2 = entrada.nextInt();
             }catch (NumberFormatException | InputMismatchException e) {
+
                 System.out.println("Introduce un numero valido");
                 entrada.nextLine();
             }
