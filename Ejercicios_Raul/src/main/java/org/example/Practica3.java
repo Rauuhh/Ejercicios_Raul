@@ -36,7 +36,7 @@ public class Practica3 {
             System.out.println("Tienes que ser mayor de edad para votar");
             System.out.println("Te quedan " + result + " año/s para votar");
         }
-        if (edad > 18)
+        if (edad >= 18)
         {
             System.out.println("Enhorabuena " + nombre + ", puedes votar");
         }
