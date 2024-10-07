@@ -28,8 +28,8 @@ public class Main {
                             ejercicio5.ejercicio5();*/
                                 /*Ejercicio6 ejercicio6 = new Ejercicio6();
                                 ejercicio6.ejercicio6();*/
-                                    Practica3 practica3 = new Practica3();
-                                    practica3.practica3();
+                                         Practica4 practica4 = new Practica4();
+                                         practica4.practica4();
 
     }
 }
