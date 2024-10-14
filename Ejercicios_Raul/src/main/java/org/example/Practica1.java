@@ -7,11 +7,11 @@ public class Practica1 {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingresa tu fecha de nacimiento (dd/mm/yyyy): ");
         String fecha = entrada.nextLine();
-        fecha=fecha.replaceAll("[^\\p{Alpha}]+","");
+
 
         String dia = fecha.substring(0,2);
-        String mes = fecha.substring(2,4);
-        String anio = fecha.substring(4,8);
+        String mes = fecha.substring(3,5);
+        String anio = fecha.substring(6,10);
                      int dia2 =  Integer.parseInt(dia);
                      int mes2 =  Integer.parseInt(mes);
                      int ano2 =  Integer.parseInt(anio);

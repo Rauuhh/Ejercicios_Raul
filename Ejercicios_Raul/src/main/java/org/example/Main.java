@@ -30,8 +30,10 @@ public class Main {
                                                  practica4.practica4();*/
                                                     /*BateriaUD2 bateria2 = new BateriaUD2();
                                                     bateria2.bateria2();*/
-                                                        Practica1 practica1 = new Practica1();
-                                                        practica1.practica1();
+                                                        /*Practica1 practica1 = new Practica1();
+                                                        practica1.practica1();*/
+                                                            /*Formato formato = new Formato();
+                                                            formato.formato();*/
 
     }
 }
