@@ -34,6 +34,113 @@ public class Main {
                                                         practica1.practica1();*/
                                                             /*Formato formato = new Formato();
                                                             formato.formato();*/
+                                                                /*Ampliacion1 ampliacion1 = new Ampliacion1();
+                                                                ampliacion1.ampliacion1();*/
+                                                                    /* Ampliacion2 ampliacion2 = new Ampliacion2();
+                                                                    ampliacion2.ampliacion2();*/
+                                                                        Calculadora calculadora = new Calculadora();
+                                                                        calculadora.calculadora();
+                                                                            /*Ternaria ternaria = new Ternaria();
+                                                                            ternaria.ternaria();*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
+
 }
