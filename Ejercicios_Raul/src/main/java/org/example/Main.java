@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Random;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -38,13 +40,58 @@ public class Main {
                                                                 ampliacion1.ampliacion1();*/
                                                                     /* Ampliacion2 ampliacion2 = new Ampliacion2();
                                                                     ampliacion2.ampliacion2();*/
-                                                                        Calculadora calculadora = new Calculadora();
-                                                                        calculadora.calculadora();
+                                                                        /*Calculadora calculadora = new Calculadora();
+                                                                        calculadora.calculadora();*/
                                                                             /*Ternaria ternaria = new Ternaria();
                                                                             ternaria.ternaria();*/
+                                                                                /* Bucles bucles = new Bucles();
+                                                                                bucles.bucles(); */
+                                                                                    ISBN isbn = new ISBN();
+                                                                                    isbn.isbn();
+        /*Ejercicio 1
+                                                                                    Random aleatorio = new Random();
 
 
+                                                                                    int numero = aleatorio.nextInt(6)+1;
+                                                                                    int numero2 = aleatorio.nextInt(6)+1;
 
+                                                                                    int numerototal = numero + numero2;
+
+                                                                                    System.out.println("El valor del dado 1 es " + numero);
+                                                                                    System.out.println("El valor del dado 2 es " + numero2);
+                                                                                    System.out.println("El resulatdo es " + numerototal);*/
+
+
+        /*ejercicio 2
+                                                                                    String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                                                                                    int tamano = caracteres.length();
+                                                                                    int longitud = 12;
+                                                                                    int indice;
+                                                                                    String contra = "";
+                                                                                    for (int i =0; i < longitud; i++)
+                                                                                    {
+                                                                                        indice = aleatorio.nextInt(tamano);
+                                                                                        contra += caracteres.charAt(indice);
+                                                                                    }
+                                                                                        System.out.println(contra); */
+
+                                                                                    /* int numero = aleatorio.nextInt();
+                                                                                    System.out.println(numero);
+
+                                                                                    numero = aleatorio.nextInt(6) + 1;
+                                                                                    System.out.println(numero);
+
+                                                                                    double numero2 = aleatorio.nextDouble();
+                                                                                    System.out.println(numero2);
+
+                                                                                    numero2 = aleatorio.nextDouble()*6 + 1;
+                                                                                    System.out.println(numero2);
+
+                                                                                    numero = (int) aleatorio.nextDouble() * 6 + 1;
+                                                                                    System.out.println(numero);
+
+                                                                                    numero2 = Math.random() * 6 + 1;
+                                                                                    System.out.println(numero2);*/
 
 
 
