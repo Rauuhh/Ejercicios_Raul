@@ -5,6 +5,23 @@ import java.util.Scanner;
 
 public class Calculadora {
     public void calculadora() {
+        int a = 1, b, i, j;
+        b = 0;
+
+        for (i = -1; i <= a; i += 2) {
+            b = b + i;
+        }
+
+        for (j = a; j <= i; j++) {
+            b = b + j;
+        }
+
+        System.out.println(b);
+    }
+}
+
+
+        /*
         Scanner entrada = new Scanner(System.in);
         float num1 = 0;
         float num2 = 0;
@@ -102,4 +119,4 @@ public class Calculadora {
                     break;
             }
     }
-}
+}*/

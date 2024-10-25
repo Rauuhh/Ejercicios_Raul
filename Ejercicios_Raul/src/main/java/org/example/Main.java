@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Random;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -8,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-
+        Scanner entrada = new Scanner(System.in);
     /*Actividad_inicial actividad_inicial = new Actividad_inicial();
     actividad_inicial.ejecutar();*/
        /*Ejercicio1 ejercicio1 = new Ejercicio1();
@@ -46,13 +47,16 @@ public class Main {
                                                                             ternaria.ternaria();*/
                                                                                 /* Bucles bucles = new Bucles();
                                                                                 bucles.bucles(); */
-                                                                                    ISBN isbn = new ISBN();
-                                                                                    isbn.isbn();
-        /*Ejercicio 1
-                                                                                    Random aleatorio = new Random();
+                                                                                    /*ISBN isbn = new ISBN();
+                                                                                    isbn.isbn();*/
+                                                                                        Preexamen preexamen = new Preexamen();
+                                                                                        preexamen.preexamen();
+
+                                                                                        /*Ejercicio 1*/
+                                                                                    /*Random aleatorio = new Random();*/
 
 
-                                                                                    int numero = aleatorio.nextInt(6)+1;
+                                                                                   /* int numero = aleatorio.nextInt(6)+1;
                                                                                     int numero2 = aleatorio.nextInt(6)+1;
 
                                                                                     int numerototal = numero + numero2;
@@ -62,8 +66,8 @@ public class Main {
                                                                                     System.out.println("El resulatdo es " + numerototal);*/
 
 
-        /*ejercicio 2
-                                                                                    String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+                                                                                    /*String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
                                                                                     int tamano = caracteres.length();
                                                                                     int longitud = 12;
                                                                                     int indice;
@@ -73,7 +77,7 @@ public class Main {
                                                                                         indice = aleatorio.nextInt(tamano);
                                                                                         contra += caracteres.charAt(indice);
                                                                                     }
-                                                                                        System.out.println(contra); */
+                                                                                        System.out.println(contra);*/
 
                                                                                     /* int numero = aleatorio.nextInt();
                                                                                     System.out.println(numero);
@@ -93,7 +97,33 @@ public class Main {
                                                                                     numero2 = Math.random() * 6 + 1;
                                                                                     System.out.println(numero2);*/
 
+                                                                                    /*System.out.println("Introduce el rango minimo");
+                                                                                    int minimo = entrada.nextInt();
+                                                                                    System.out.println("Introduce el rango maximo");
+                                                                                    int maximo = entrada.nextInt();
+                                                                                    System.out.println("Introduce la cantidad de mumeros");
+                                                                                    int cantidad = entrada.nextInt();
+                                                                                    if (minimo < maximo) {
+                                                                                        String muestra ="";
+                                                                                        for (int i = 0; i < cantidad; i++) {
+                                                                                              muestra += aleatorio.nextInt(maximo - minimo + 1) + minimo;
+                                                                                        }
+                                                                                        System.out.println(muestra);
+                                                                                    }*/
 
+
+
+                                                                                    /*String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                                                                                    int tamano = caracteres.length();
+                                                                                    int longitud = aleatorio.nextInt(3) + 6;
+                                                                                    int indice;
+                                                                                    String contra = "";
+                                                                                    for (int i =0; i < longitud; i++)
+                                                                                    {
+                                                                                        indice = aleatorio.nextInt(tamano);
+                                                                                        contra += caracteres.charAt(indice);
+                                                                                    }
+                                                                                    System.out.println(contra);*/
 
 
 
