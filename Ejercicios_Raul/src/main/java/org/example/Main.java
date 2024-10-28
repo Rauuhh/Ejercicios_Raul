@@ -45,12 +45,12 @@ public class Main {
                                                                         calculadora.calculadora();*/
                                                                             /*Ternaria ternaria = new Ternaria();
                                                                             ternaria.ternaria();*/
-                                                                                /* Bucles bucles = new Bucles();
-                                                                                bucles.bucles(); */
-                                                                                    /*ISBN isbn = new ISBN();
-                                                                                    isbn.isbn();*/
-                                                                                        Preexamen preexamen = new Preexamen();
-                                                                                        preexamen.preexamen();
+                                                                             /*Bucles bucles = new Bucles();
+                                                                                bucles.bucles();*/
+                                                                                    ISBN isbn = new ISBN();
+                                                                                    isbn.isbn();
+                                                                                        /*Preexamen preexamen = new Preexamen();
+                                                                                        preexamen.preexamen();*/
 
                                                                                         /*Ejercicio 1*/
                                                                                     /*Random aleatorio = new Random();*/
@@ -65,7 +65,7 @@ public class Main {
                                                                                     System.out.println("El valor del dado 2 es " + numero2);
                                                                                     System.out.println("El resulatdo es " + numerototal);*/
 
-
+                                                                                        /*Ejercicio2*/
 
                                                                                     /*String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
                                                                                     int tamano = caracteres.length();
@@ -78,6 +78,8 @@ public class Main {
                                                                                         contra += caracteres.charAt(indice);
                                                                                     }
                                                                                         System.out.println(contra);*/
+
+                                                                                    /*Eercicio3*/
 
                                                                                     /* int numero = aleatorio.nextInt();
                                                                                     System.out.println(numero);
@@ -96,6 +98,8 @@ public class Main {
 
                                                                                     numero2 = Math.random() * 6 + 1;
                                                                                     System.out.println(numero2);*/
+
+                                                                                        /*Ejercicio4*/
 
                                                                                     /*System.out.println("Introduce el rango minimo");
                                                                                     int minimo = entrada.nextInt();
