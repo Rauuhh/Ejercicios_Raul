@@ -47,10 +47,10 @@ public class Main {
                                                                             ternaria.ternaria();*/
                                                                              /*Bucles bucles = new Bucles();
                                                                                 bucles.bucles();*/
-                                                                                    ISBN isbn = new ISBN();
-                                                                                    isbn.isbn();
-                                                                                        /*Preexamen preexamen = new Preexamen();
-                                                                                        preexamen.preexamen();*/
+                                                                                    /*ISBN isbn = new ISBN();
+                                                                                    isbn.isbn();*/
+                                                                                        Preexamen preexamen = new Preexamen();
+                                                                                        preexamen.preexamen();
 
                                                                                         /*Ejercicio 1*/
                                                                                     /*Random aleatorio = new Random();*/
