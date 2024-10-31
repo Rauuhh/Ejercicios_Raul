@@ -1,68 +1,58 @@
 package org.example;
-
 import java.util.Scanner;
-
 public class ISBN {
-    public void isbn() {
-        Scanner entrada = new Scanner(System.in);
-        System.out.println("Introduce un ISBN (10 dígitos, usa '?' para el dígito faltante si es necesario): ");
-        String ISBN = entrada.next();
-        int resultado = 0;
-        int posicionFaltante = -1;
+    public void isbn(){
+        Scanner escaner = new Scanner(System.in);
+        int operacion = 0;
+        int interrogacion = 0;
+        int ninterrogacion;
+        int nfinal = 0;
+        int nfinal2 = 0;
 
-        // Validar longitud del ISBN
-        if (ISBN.length() != 10) {
-            System.out.println("El ISBN no es válido: debe tener 10 dígitos.");
-            return;
-        }
+        System.out.println("Introduzca un ISBN");
+        String isbn = escaner.next();
 
-        // Calcular el resultado parcial y localizar el dígito faltante
-        for (int i = 0; i < 10; i++) {
-            char caracter = ISBN.charAt(i);
-            int digito;
+        if (isbn.length() == 10) //Si la longitud de la variable es igual a 10 caracteres
+        {
 
-            if (caracter == '?') {
-                posicionFaltante = i;
-                continue;
-            }
-
-            if (i == 9 && caracter == 'X') { // Caso especial para 'X' en la última posición
-                digito = 10;
-            } else {
-                try {
-                    digito = Character.getNumericValue(caracter);
-                } catch (NumberFormatException e) {
-                    System.out.println("El ISBN no es válido: contiene caracteres no numéricos.");
-                    return;
+            for (int i=1; i <= 10 ; i ++)
+            {
+                if (isbn.charAt(i-1) == '?') { //Si el valor en la posición e i es ?
+                    interrogacion = i; // nos guardamos la posicion
                 }
-            }
+                else
+                {
+                    if (i == 10 && isbn.charAt(i - 1) == 'X') // si la posicion es la 10 y es una X
+                    {
+                        nfinal = (10 * i); //multiplicas la i por un 10
 
-            // Sumar al resultado parcial
-            resultado += digito * (10 - i);
-        }
+                    }else
+                    {
+                        try { //Intenta convertir la posicion en número entero, y multiplica el valor por i
+                             int entero = Integer.parseInt(isbn.substring(i - 1, i));
+                            nfinal = (entero * i);
+                        }catch (NumberFormatException error){
+                            System.exit(0);
+                        }
 
-        // Comprobar si falta un dígito
-        if (posicionFaltante != -1) {
-            // Calcular el dígito faltante que hace que el ISBN sea válido
-            for (int j = 0; j <= 10; j++) {
-                int total = resultado + j * (10 - posicionFaltante);
-                if (total % 11 == 0) {
-                    if (j == 10) {
-                        System.out.println("El dígito que falta es: X");
-                    } else {
-                        System.out.println("El dígito que falta es: " + j);
                     }
-                    return;
+                    operacion = (operacion + nfinal); //esto nos va a ir sumando las multiplicaciones
                 }
             }
-            System.out.println("No se encontró un valor que haga válido el ISBN.");
-        } else {
-            // Verificar si el ISBN es válido
-            if (resultado % 11 == 0) {
-                System.out.println("El ISBN es válido.");
-            } else {
-                System.out.println("El ISBN no es válido.");
-            }
-        }
-    }
-}
+            if (interrogacion != 0){ //Si hay interrogaciones...
+
+                for (int f = 0; f <= 9 ; f++){
+                    ninterrogacion = (interrogacion * f); //hacemos un blucle para ir probando numero por numero el que multiplicado por la posicion y sumado a los demas sea divisible entre 11, si lo es la metemos a la variable y nos salimos del for
+                    if ((operacion + ninterrogacion) % 11 == 0){
+                        break;
+                    }
+                }
+                System.out.println("El numero que falta es " + nfinal2);
+
+            }else {
+
+                if ((operacion % 11) == 0){
+                    System.out.println("El ISBN es valido");
+                }else{
+                    System.out.println("El ISBN no es valido");
+                }
