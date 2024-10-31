@@ -117,10 +117,10 @@ public class Main {
 
 
 
-                                                                                    /*String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-                                                                                    int tamano = caracteres.length();
-                                                                                    int longitud = aleatorio.nextInt(3) + 6;
-                                                                                    int indice;
+                                                                                    //String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                                                                                    //int tamano = caracteres.length();
+                                                                                    //int longitud = aleatorio.nextInt(3) + 6;
+                                                                                    /*int indice;
                                                                                     String contra = "";
                                                                                     for (int i =0; i < longitud; i++)
                                                                                     {
