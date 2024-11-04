@@ -10,6 +10,7 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         Scanner entrada = new Scanner(System.in);
+        
     /*Actividad_inicial actividad_inicial = new Actividad_inicial();
     actividad_inicial.ejecutar();*/
        /*Ejercicio1 ejercicio1 = new Ejercicio1();
@@ -49,11 +50,11 @@ public class Main {
                                                                                 bucles.bucles();*/
                                                                                     /*ISBN isbn = new ISBN();
                                                                                     isbn.isbn();*/
-                                                                                        Preexamen preexamen = new Preexamen();
-                                                                                        preexamen.preexamen();
+        /*Preexamen preexamen = new Preexamen();
+        preexamen.preexamen();*/
 
-                                                                                        /*Ejercicio 1*/
-                                                                                    /*Random aleatorio = new Random();*/
+        /*Ejercicio 1*/
+        /*Random aleatorio = new Random();*/
 
 
                                                                                    /* int numero = aleatorio.nextInt(6)+1;
@@ -65,7 +66,7 @@ public class Main {
                                                                                     System.out.println("El valor del dado 2 es " + numero2);
                                                                                     System.out.println("El resulatdo es " + numerototal);*/
 
-                                                                                        /*Ejercicio2*/
+        /*Ejercicio2*/
 
                                                                                     /*String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
                                                                                     int tamano = caracteres.length();
@@ -79,7 +80,7 @@ public class Main {
                                                                                     }
                                                                                         System.out.println(contra);*/
 
-                                                                                    /*Eercicio3*/
+        /*Eercicio3*/
 
                                                                                     /* int numero = aleatorio.nextInt();
                                                                                     System.out.println(numero);
@@ -99,7 +100,7 @@ public class Main {
                                                                                     numero2 = Math.random() * 6 + 1;
                                                                                     System.out.println(numero2);*/
 
-                                                                                        /*Ejercicio4*/
+        /*Ejercicio4*/
 
                                                                                     /*System.out.println("Introduce el rango minimo");
                                                                                     int minimo = entrada.nextInt();
@@ -116,10 +117,9 @@ public class Main {
                                                                                     }*/
 
 
-
-                                                                                    //String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-                                                                                    //int tamano = caracteres.length();
-                                                                                    //int longitud = aleatorio.nextInt(3) + 6;
+        //String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        //int tamano = caracteres.length();
+        //int longitud = aleatorio.nextInt(3) + 6;
                                                                                     /*int indice;
                                                                                     String contra = "";
                                                                                     for (int i =0; i < longitud; i++)
@@ -130,98 +130,5 @@ public class Main {
                                                                                     System.out.println(contra);*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
 }
