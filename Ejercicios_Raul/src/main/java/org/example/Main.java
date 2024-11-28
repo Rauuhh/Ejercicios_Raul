@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.Random;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -50,84 +51,29 @@ public class Main {
                                                                                 bucles.bucles();*/
                                                                                     /*ISBN isbn = new ISBN();
                                                                                     isbn.isbn();*/
-        /*Preexamen preexamen = new Preexamen();
-        preexamen.preexamen();*/
-
-        /*Ejercicio 1*/
-        /*Random aleatorio = new Random();*/
-
-
-                                                                                   /* int numero = aleatorio.nextInt(6)+1;
-                                                                                    int numero2 = aleatorio.nextInt(6)+1;
-
-                                                                                    int numerototal = numero + numero2;
-
-                                                                                    System.out.println("El valor del dado 1 es " + numero);
-                                                                                    System.out.println("El valor del dado 2 es " + numero2);
-                                                                                    System.out.println("El resulatdo es " + numerototal);*/
-
-        /*Ejercicio2*/
-
-                                                                                    /*String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-                                                                                    int tamano = caracteres.length();
-                                                                                    int longitud = 12;
-                                                                                    int indice;
-                                                                                    String contra = "";
-                                                                                    for (int i =0; i < longitud; i++)
-                                                                                    {
-                                                                                        indice = aleatorio.nextInt(tamano);
-                                                                                        contra += caracteres.charAt(indice);
-                                                                                    }
-                                                                                        System.out.println(contra);*/
-
-        /*Eercicio3*/
-
-                                                                                    /* int numero = aleatorio.nextInt();
-                                                                                    System.out.println(numero);
-
-                                                                                    numero = aleatorio.nextInt(6) + 1;
-                                                                                    System.out.println(numero);
-
-                                                                                    double numero2 = aleatorio.nextDouble();
-                                                                                    System.out.println(numero2);
-
-                                                                                    numero2 = aleatorio.nextDouble()*6 + 1;
-                                                                                    System.out.println(numero2);
-
-                                                                                    numero = (int) aleatorio.nextDouble() * 6 + 1;
-                                                                                    System.out.println(numero);
-
-                                                                                    numero2 = Math.random() * 6 + 1;
-                                                                                    System.out.println(numero2);*/
-
-        /*Ejercicio4*/
-
-                                                                                    /*System.out.println("Introduce el rango minimo");
-                                                                                    int minimo = entrada.nextInt();
-                                                                                    System.out.println("Introduce el rango maximo");
-                                                                                    int maximo = entrada.nextInt();
-                                                                                    System.out.println("Introduce la cantidad de mumeros");
-                                                                                    int cantidad = entrada.nextInt();
-                                                                                    if (minimo < maximo) {
-                                                                                        String muestra ="";
-                                                                                        for (int i = 0; i < cantidad; i++) {
-                                                                                              muestra += aleatorio.nextInt(maximo - minimo + 1) + minimo;
-                                                                                        }
-                                                                                        System.out.println(muestra);
-                                                                                    }*/
+                                                                                        /*Vector vector = new Vector();
+                                                                                        vector.vector();*/
+                                                                                            /*Samurai samurai = new Samurai();
+                                                                                            samurai.samurai();*/
+                                                                                                /*Navidad navidad = new Navidad();
+                                                                                                navidad.navidad();*/
+                                                                                                    /*Ruleta ruleta = new Ruleta();
+                                                                                                    ruleta.ruleta();*/
+                                                                                                        /*Duplicado duplicado = new Duplicado();
+                                                                                                        duplicado.distint();*/
+                                                                                                            /*Primitiva primitiva = new Primitiva();
+                                                                                                            primitiva.primitiva();*/
+                                                                                                                /*Matriz matriz = new Matriz();
+                                                                                                                matriz.tratamiento();*/
+                                                                                                                     /*Sopa sopa = new Sopa();
+                                                                                                                     sopa.sopa();*/
+                                                                                                                            Bingo bingo = new Bingo();
+                                                                                                                            bingo.bingo();
 
 
-        //String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        //int tamano = caracteres.length();
-        //int longitud = aleatorio.nextInt(3) + 6;
-                                                                                    /*int indice;
-                                                                                    String contra = "";
-                                                                                    for (int i =0; i < longitud; i++)
-                                                                                    {
-                                                                                        indice = aleatorio.nextInt(tamano);
-                                                                                        contra += caracteres.charAt(indice);
-                                                                                    }
-                                                                                    System.out.println(contra);*/
+
+
+
 
 
     }
