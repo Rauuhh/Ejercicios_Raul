@@ -10,7 +10,6 @@ public class Samurai {
         int[] equipo1 = new int[7];
         int[] equipo2 = new int[7];
 
-        // Entrada para el Equipo 1
         while (true) {
             System.out.println("Introduce las potencias de los samuráis para el Equipo 1 (7 números separados por espacio):");
             int suma1 = 0;
@@ -25,7 +24,6 @@ public class Samurai {
             }
         }
 
-        // Entrada para el Equipo 2
         while (true) {
             System.out.println("Introduce las potencias de los samuráis para el Equipo 2 (7 números separados por espacio):");
             int suma2 = 0;
@@ -41,15 +39,13 @@ public class Samurai {
         }
 
         Random aleatorio = new Random();
-        int turno = aleatorio.nextInt(7);  // Elige un turno aleatorio para comenzar
+        int turno = aleatorio.nextInt(7); 
 
         int bajasEquipo1 = 0, bajasEquipo2 = 0;
-
-        // Ahora recorremos todas las peleas (siempre 7)
         for (int i = 0; i < 7; i++) {
-            int samuraiIndex = (turno + i) % 7;  // Ciclo entre los 7 samuráis
+            int samuraiIndex = (turno + i) % 7; 
 
-            // Pelea entre samuráis
+
             if (equipo1[samuraiIndex] > equipo2[samuraiIndex]) {
                 bajasEquipo2++;
                 System.out.println("Samurai " + (samuraiIndex + 1) + " gana para el Equipo 1: " + equipo1[samuraiIndex] + " vs " + equipo2[samuraiIndex]);
@@ -63,7 +59,6 @@ public class Samurai {
             }
         }
 
-        // Verificación de las bajas después de las 7 peleas
         if (bajasEquipo1 > bajasEquipo2) {
             System.out.println("¡Equipo 1 GANA con " + bajasEquipo1 + " bajas!");
         } else if (bajasEquipo2 > bajasEquipo1) {
@@ -71,8 +66,6 @@ public class Samurai {
         } else {
             System.out.println("¡Es un empate con " + bajasEquipo1 + " bajas en cada equipo!");
         }
-
-        // Mensaje final indicando que se jugaron todas las peleas
         System.out.println("¡Se han jugado las 7 peleas!");
     }
 }
