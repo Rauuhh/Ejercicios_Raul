@@ -41,7 +41,7 @@ public class Samurai {
         }
 
         Random aleatorio = new Random();
-        int turno = aleatorio.nextInt(7);  // Elige un turno aleatorio para comenzar
+        int turno = aleatorio.nextInt(7)+1 ;  // Elige un turno aleatorio para comenzar
 
         int bajasEquipo1 = 0, bajasEquipo2 = 0;
 
@@ -57,8 +57,6 @@ public class Samurai {
                 bajasEquipo1++;
                 System.out.println("Samurai " + (samuraiIndex + 1) + " gana para el Equipo 2: " + equipo1[samuraiIndex] + " vs " + equipo2[samuraiIndex]);
             } else {
-                bajasEquipo1++;
-                bajasEquipo2++;
                 System.out.println("Empate. Samurai " + (samuraiIndex + 1) + " mueren ambos: " + equipo1[samuraiIndex] + " vs " + equipo2[samuraiIndex]);
             }
 
@@ -70,6 +68,7 @@ public class Samurai {
                 System.out.println("¡Equipo 1 GANA!");
                 return;  // Termina el juego si el equipo 2 tiene más de 3 bajas
             }
+
         }
 
         // Si después de las 7 peleas no hay más de 3 bajas en ningún equipo, el juego termina en empate
