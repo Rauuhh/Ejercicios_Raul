@@ -41,7 +41,7 @@ public class Samurai {
         }
 
         Random aleatorio = new Random();
-        int turno = aleatorio.nextInt(7)+1 ;  // Elige un turno aleatorio para comenzar
+        int turno = aleatorio.nextInt(7);  // Elige un turno aleatorio para comenzar
 
         int bajasEquipo1 = 0, bajasEquipo2 = 0;
 
@@ -57,24 +57,23 @@ public class Samurai {
                 bajasEquipo1++;
                 System.out.println("Samurai " + (samuraiIndex + 1) + " gana para el Equipo 2: " + equipo1[samuraiIndex] + " vs " + equipo2[samuraiIndex]);
             } else {
+                bajasEquipo1++;
+                bajasEquipo2++;
                 System.out.println("Empate. Samurai " + (samuraiIndex + 1) + " mueren ambos: " + equipo1[samuraiIndex] + " vs " + equipo2[samuraiIndex]);
             }
-
-            // Verificación de las bajas
-            if (bajasEquipo1 > 3) {
-                System.out.println("¡Equipo 2 GANA!");
-                return;  // Termina el juego si el equipo 1 tiene más de 3 bajas
-            } else if (bajasEquipo2 > 3) {
-                System.out.println("¡Equipo 1 GANA!");
-                return;  // Termina el juego si el equipo 2 tiene más de 3 bajas
-            }
-
         }
 
-        // Si después de las 7 peleas no hay más de 3 bajas en ningún equipo, el juego termina en empate
-        if (bajasEquipo1 <= 3 && bajasEquipo2 <= 3) {
-            System.out.println("¡Se han jugado las 7 peleas!");
+        // Verificación de las bajas después de las 7 peleas
+        if (bajasEquipo1 > bajasEquipo2) {
+            System.out.println("¡Equipo 1 GANA con " + bajasEquipo1 + " bajas!");
+        } else if (bajasEquipo2 > bajasEquipo1) {
+            System.out.println("¡Equipo 2 GANA con " + bajasEquipo2 + " bajas!");
+        } else {
+            System.out.println("¡Es un empate con " + bajasEquipo1 + " bajas en cada equipo!");
         }
+
+        // Mensaje final indicando que se jugaron todas las peleas
+        System.out.println("¡Se han jugado las 7 peleas!");
     }
 }
 
