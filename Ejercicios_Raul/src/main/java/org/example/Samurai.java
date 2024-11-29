@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Samurai {
 
-    public  void samurai() {
+    public void samurai() {
         Scanner entrada = new Scanner(System.in);
 
         int[] equipo1 = new int[7];
         int[] equipo2 = new int[7];
 
+        // Entrada para el Equipo 1
         while (true) {
             System.out.println("Introduce las potencias de los samuráis para el Equipo 1 (7 números separados por espacio):");
             int suma1 = 0;
@@ -23,6 +24,8 @@ public class Samurai {
                 System.out.println("ERROR. La potencia total debe ser 30.");
             }
         }
+
+        // Entrada para el Equipo 2
         while (true) {
             System.out.println("Introduce las potencias de los samuráis para el Equipo 2 (7 números separados por espacio):");
             int suma2 = 0;
@@ -36,16 +39,17 @@ public class Samurai {
                 System.out.println("ERROR. La potencia total debe ser 30.");
             }
         }
+
         Random aleatorio = new Random();
-        int turno = aleatorio.nextInt(7);
+        int turno = aleatorio.nextInt(7);  // Elige un turno aleatorio para comenzar
 
         int bajasEquipo1 = 0, bajasEquipo2 = 0;
 
+        // Ahora recorremos todas las peleas (siempre 7)
+        for (int i = 0; i < 7; i++) {
+            int samuraiIndex = (turno + i) % 7;  // Ciclo entre los 7 samuráis
 
-        for (int i = turno; i < 7 + turno; i++) {
-            int samuraiIndex = i % 7;  // Ciclo entre los 7 samuráis
-
-
+            // Pelea entre samuráis
             if (equipo1[samuraiIndex] > equipo2[samuraiIndex]) {
                 bajasEquipo2++;
                 System.out.println("Samurai " + (samuraiIndex + 1) + " gana para el Equipo 1: " + equipo1[samuraiIndex] + " vs " + equipo2[samuraiIndex]);
@@ -58,13 +62,20 @@ public class Samurai {
                 System.out.println("Empate. Samurai " + (samuraiIndex + 1) + " mueren ambos: " + equipo1[samuraiIndex] + " vs " + equipo2[samuraiIndex]);
             }
 
+            // Verificación de las bajas
             if (bajasEquipo1 > 3) {
                 System.out.println("¡Equipo 2 GANA!");
-                return;
+                return;  // Termina el juego si el equipo 1 tiene más de 3 bajas
             } else if (bajasEquipo2 > 3) {
                 System.out.println("¡Equipo 1 GANA!");
-                return;
+                return;  // Termina el juego si el equipo 2 tiene más de 3 bajas
             }
+        }
+
+        // Si después de las 7 peleas no hay más de 3 bajas en ningún equipo, el juego termina en empate
+        if (bajasEquipo1 <= 3 && bajasEquipo2 <= 3) {
+            System.out.println("¡Se han jugado las 7 peleas!");
         }
     }
 }
+
