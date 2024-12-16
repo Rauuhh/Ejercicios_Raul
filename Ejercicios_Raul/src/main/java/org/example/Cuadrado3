@@ -17,7 +17,7 @@ public class Cuadrado3 {
             tam = Integer.parseInt(entrada.nextLine());
         } catch (NumberFormatException | InputMismatchException e) {
             return true;
-        }
+        } 
         if (tam == 0) {
             return false;
         } else {
